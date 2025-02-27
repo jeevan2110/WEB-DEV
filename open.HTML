@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome page</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to right, #6dd5ed, #2193b0);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 700px;
+        padding: 20px;
+      }
+
+      .container h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+      }
+
+      .container p {
+        font-size: 18px;
+        margin-bottom: 40px;
+        line-height: 1.6;
+      }
+
+      .btn-book-now {
+        background: white;
+        color: #2193b0;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .btn-book-now:hover {
+        background: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Movie Ticket Booking</h1>
+      <p>
+        Book your favorite movie or event tickets in just a few clicks! Select
+        your seats, choose your preferred timing, and enjoy the show. Click the
+        button below to start booking now!
+      </p>
+      <a href="signin.html" class="btn-book-now">Book Now</a>
+    </div>
+  </body>
+</html>

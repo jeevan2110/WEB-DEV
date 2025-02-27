@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    
+    <style>
+        /* General Styles */
+        .main img{
+            height: 280px;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        nav input[type="text"] {
+            flex: 1;
+            margin-left: 20px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        nav button {
+            margin-left: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        nav .fa-bars {
+            font-size: 24px;
+            margin-left: 20px;
+        }
+
+        .sec-nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .sec-nav p {
+            margin: 0 15px;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card a img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .banner img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+        }
+
+        .footer img {
+            width:100%;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+
+        .footer .icon a {
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav input[type="text"] {
+                flex: 1 1 auto;
+                margin-left: 10px;
+            }
+
+            .card a img {
+                width: 150px;
+                height: 200px;
+            }
+
+            .sec-nav p {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .sec-nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav input[type="text"] {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            nav button {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .card {
+                justify-content: center;
+            }
+
+            .card a img {
+                width: 120px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="fnav">
+        <div class="left">
+            <img src="C:\Users\rjeev\OneDrive\Desktop\image21.png" alt="">
+            <input type="text" placeholder="Search For Movies, Events, Plays and More">
+        </div>
+        <div class="right">
+            <p>Location</p>
+            <button>Sign In</button>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    
+    <nav class="sec-nav">
+        <div class="s-left">
+            <p>Movies</p>
+            <p>Stream</p>
+            <p>Events</p>
+            <p>Sports</p>
+            <p>Plays</p>
+            <p>Activities</p>
+            <p>Buzz</p>
+        </div>
+        <div class="s-right">
+            <p>List Your Show</p>
+            <p>Corporates</p>
+            <p>Offer</p>
+            <p>Gift Cards</p>
+        </div>
+    </nav>
+
+    <div class="main">
+        <a href="main.html">
+            <img src="img/main.jpeg.jpg" alt="Main Poster">
+        </a>
+    </div>
+    
+    <div class="container">
+        <h2>Recommended Movies</h2>
+        <div class="card">
+            <a href="seat.html">
+                <img src="img/image1..jpeg.jpg" alt="Vettaiyan">
+            </a>
+            <a href="seat.html">
+                <img src="img/image2.jpg" alt="Bahubali">
+            </a>
+            <a href="seat.html">
+                <img src="img/image3.jpeg.jpg" alt="Kalki 2898 AD">
+            </a>
+            <a href="seat.html">
+                <img src="img/image4.jpeg.jpg" alt="Kanguva">
+            </a>
+            <a href="seat.html">
+                <img src="img/image5.jpeg.jpg" alt="Amaran">
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Best of Live Events</h2>
+        <div class="card">
+            <a href="seat.html">
+                <img src="img/show1.jpeg.jpg" alt="Live Event One">
+            </a>
+            <a href="seat.html">
+                <img src="img/show2.jpeg.jpg" alt="Live Event Two">
+            </a>
+            <a href="seat.html">
+                <img src="img/show3.jpeg.jpg" alt="Live Event Three">
+            </a>
+            <a href="seat.html">
+                <img src="img/show4.jpeg.jpg" alt="Live Event Four">
+            </a>
+            <a href="seat.html">
+                <img src="img/show5.jpeg.jpg" alt="Live Event Five">
+            </a>
+        </div>
+    </div>
+    <div class="banner">
+        <a href="main.html">
+            <img src="img/banner.jpeg.jpg" alt="Banner Placeholder">
+        </a>
+    </div>
+
+
+
+
+    <div class="premiere">
+        <h2>PREMIERE</h2>
+        <div class="container">
+            <h2>Premiere Shows</h2>
+            <div class="card">
+                <a href="main.html">
+                    <img src="https://i.pinimg.com/736x/a2/f7/3f/a2f73f04e88586a13fcf3f70cb5faf36.jpg" alt="Premiere Show One">
+                </a>
+                <a href="main.html">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/ed832288624513.5ddc260bd7d9b.jpg" alt="Premiere Show Two">
+                </a>
+                <a href="main.html">
+                    <img src="https://pbs.twimg.com/media/GVV4boXa4AAJJ9R.jpg:large" alt="Premiere Show Three">
+                </a>
+                <a href="main.html">
+                    <img src="https://pakkatelugu.com/english/wp-content/uploads/2024/03/image-147.png" alt="Premiere Show Four">
+                </a>
+                <a href="main.html">
+                    <img src="https://static.theprint.in/wp-content/uploads/2023/04/ANI-20230422204447.jpg" alt="Premiere Show Five">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <a href="main.html">
+            <img src="img/footer.png" alt="Footer Image">
+        </a>
+    </div>
+</body>
+</html>
